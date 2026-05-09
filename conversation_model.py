@@ -288,7 +288,7 @@ profiles_df.head()
 # 2. SET GROQ API KEY
 # ============================================================
 
-os.environ["GROQ_API_KEY"] = getpass("Enter your GROQ API key: ")
+os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
 
 # ============================================================
 # 3. INITIALIZE GROQ LLM
